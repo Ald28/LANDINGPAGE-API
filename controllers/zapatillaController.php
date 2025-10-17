@@ -14,7 +14,27 @@ class ZapatillaController
     public function getAllZapatillas()
     {
         $zapatillas = $this->zapatillaModel->getAll();
-        echo json_encode($zapatillas);
+
+        $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+        $limit = isset($_GET['limit']) ? (int)$_GET['limit'] : 10;
+
+        $page = $page < 1 ? 1 : $page;
+        $limit = $limit < 1 ? 10 : $limit;
+
+        $offset = ($page - 1) * $limit;
+
+        $paginatedZapatillas = array_slice($zapatillas, $offset, $limit);
+
+        $total = count($zapatillas);
+        $totalPages = ceil($total / $limit);
+
+        echo json_encode([
+            'page' => $page,
+            'limit' => $limit,
+            'total' => $total,
+            'totalPages' => $totalPages,
+            'zapatillas' => $paginatedZapatillas
+        ]);
     }
 
     public function getZapatillas($id)
@@ -39,7 +59,7 @@ class ZapatillaController
         }
 
         if (!filter_var($data['imagen'], FILTER_VALIDATE_URL)) {
-            echo json_encode(['error' => 'La URL de imagen no es válida', 'status' => 400]);
+            echo json_encode(['error' => 'La URL de imagen no es valida', 'status' => 400]);
             return;
         }
 

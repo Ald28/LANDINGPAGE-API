@@ -1,58 +1,4 @@
 {
-    "1": {
-        "id": 1,
-        "marca": "Nike",
-        "modelo": "Air Max",
-        "color": "Rojo",
-        "precio": 120,
-        "imagen": "https:\/\/assets.adidas.com\/images\/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto\/4659ee058ba34bd2a5d0af500104c17d_9366\/Zapatillas_Campus_00s_Negro_HQ8708_01_standard.jpg",
-        "genero": "hombre",
-        "edad": "adulto",
-        "descripcion": "Zapatillas deportivas Nike Air Max para hombre.",
-        "tallas": [
-            40,
-            41,
-            42,
-            43,
-            44,
-            45
-        ]
-    },
-    "2": {
-        "id": 2,
-        "marca": "Nike",
-        "modelo": "Air Max",
-        "color": "Rojo",
-        "precio": 120,
-        "imagen": "https:\/\/assets.adidas.com\/images\/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto\/ce738cbe5342421996feaf5001044964_9366\/Zapatillas_Campus_00s_Plomo_HQ8707_01_standard.jpg",
-        "genero": "hombre",
-        "edad": "adulto",
-        "descripcion": "Zapatillas deportivas Nike Air Max para hombre.",
-        "tallas": [
-            40,
-            41,
-            42,
-            43,
-            44,
-            45
-        ]
-    },
-    "3": {
-        "id": 3,
-        "marca": "Nike",
-        "modelo": "Air Max",
-        "color": "Rojo",
-        "precio": 120,
-        "imagen": "https:\/\/assets.adidas.com\/images\/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto\/82d433384c7c435f9a2fa96d0101d323_9366\/Zapatillas_Handball_Spezial_Azul_BD7633_01_00_standard.jpg"
-    },
-    "4": {
-        "id": 4,
-        "marca": "Nike",
-        "modelo": "Air Max",
-        "color": "Rojo",
-        "precio": 120,
-        "imagen": "https:\/\/assets.adidas.com\/images\/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto\/54a8ea8d88d94e459867b85d79b81f89_9366\/Zapatillas_de_Running_Galaxy_7_Negro_ID8757_HM1.jpg"
-    },
     "5": {
         "id": 5,
         "marca": "Nike wasaa",
@@ -109,20 +55,6 @@
             45
         ]
     },
-    "10": {
-        "id": 10,
-        "marca": "vcx",
-        "modelo": "vcx",
-        "color": "ads",
-        "precio": "213",
-        "imagen": null,
-        "genero": "Hombre",
-        "edad": "Adulto",
-        "descripcion": "asdfds",
-        "tallas": [
-            "40"
-        ]
-    },
     "11": {
         "id": 11,
         "marca": "fds",
@@ -135,6 +67,110 @@
         "descripcion": "dsf",
         "tallas": [
             "40"
+        ]
+    },
+    "12": {
+        "id": 12,
+        "marca": "gfd",
+        "modelo": "gh",
+        "color": "gfh",
+        "precio": "hgf",
+        "imagen": "https:\/\/assets.adidas.com\/images\/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto\/e0829a8af3da4cc3bbc8af8800a850a7_9366\/Zapatillas_Campus_00s_Rojo_H03474_01_00_standard.jpg",
+        "genero": "Hombre",
+        "edad": "Adulto",
+        "descripcion": "fgh",
+        "tallas": [
+            "40"
+        ]
+    },
+    "13": {
+        "id": 13,
+        "marca": "dsa",
+        "modelo": "dsa",
+        "color": "das",
+        "precio": "dsadsa",
+        "imagen": "https:\/\/assets.adidas.com\/images\/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto\/de8448aed41b495c9ceeaf5001049ccf_9366\/Zapatillas_Campus_00s_Plomo_HQ8707_42_detail.jpg",
+        "genero": "Hombre",
+        "edad": "Adulto",
+        "descripcion": "dassaasddsa",
+        "tallas": [
+            "40",
+            "41"
+        ]
+    },
+    "14": {
+        "id": 14,
+        "marca": "dsa",
+        "modelo": "dsa",
+        "color": "das",
+        "precio": "dsadsa",
+        "imagen": "https:\/\/assets.adidas.com\/images\/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto\/de8448aed41b495c9ceeaf5001049ccf_9366\/Zapatillas_Campus_00s_Plomo_HQ8707_42_detail.jpg",
+        "genero": "Hombre",
+        "edad": "Adulto",
+        "descripcion": "dassaasddsa",
+        "tallas": [
+            "40",
+            "41"
+        ]
+    },
+    "15": {
+        "id": 15,
+        "marca": "dsa",
+        "modelo": "dsa",
+        "color": "das",
+        "precio": "dsadsa",
+        "imagen": "https:\/\/assets.adidas.com\/images\/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto\/de8448aed41b495c9ceeaf5001049ccf_9366\/Zapatillas_Campus_00s_Plomo_HQ8707_42_detail.jpg",
+        "genero": "Hombre",
+        "edad": "Adulto",
+        "descripcion": "dassaasddsa",
+        "tallas": [
+            "40",
+            "41"
+        ]
+    },
+    "16": {
+        "id": 16,
+        "marca": "dsa",
+        "modelo": "dsa",
+        "color": "das",
+        "precio": "dsadsa",
+        "imagen": "https:\/\/assets.adidas.com\/images\/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto\/de8448aed41b495c9ceeaf5001049ccf_9366\/Zapatillas_Campus_00s_Plomo_HQ8707_42_detail.jpg",
+        "genero": "Hombre",
+        "edad": "Adulto",
+        "descripcion": "dassaasddsa",
+        "tallas": [
+            "40",
+            "41"
+        ]
+    },
+    "17": {
+        "id": 17,
+        "marca": "dsa",
+        "modelo": "dsa",
+        "color": "das",
+        "precio": "dsadsa",
+        "imagen": "https:\/\/assets.adidas.com\/images\/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto\/de8448aed41b495c9ceeaf5001049ccf_9366\/Zapatillas_Campus_00s_Plomo_HQ8707_42_detail.jpg",
+        "genero": "Hombre",
+        "edad": "Adulto",
+        "descripcion": "dassaasddsa",
+        "tallas": [
+            "40",
+            "41"
+        ]
+    },
+    "18": {
+        "id": 18,
+        "marca": "dsa",
+        "modelo": "dsa",
+        "color": "das",
+        "precio": "dsadsa",
+        "imagen": "https:\/\/assets.adidas.com\/images\/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto\/de8448aed41b495c9ceeaf5001049ccf_9366\/Zapatillas_Campus_00s_Plomo_HQ8707_42_detail.jpg",
+        "genero": "Hombre",
+        "edad": "Adulto",
+        "descripcion": "dassaasddsa",
+        "tallas": [
+            "40",
+            "41"
         ]
     }
 }

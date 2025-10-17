@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { getZapatillas } from '../../../api/api_zapatilla';
+import { getZapatillasId, deleteZapatilla } from '../../../api/api_zapatilla';
 import { ArrowLeft } from 'lucide-react';
 
 const Detalles = () => {
@@ -12,9 +12,9 @@ const Detalles = () => {
     useEffect(() => {
         const fetchProducto = async () => {
             try {
-                const data = await getZapatillas();
-                const encontrado = data.find((item) => item.id === parseInt(id));
-                setProducto(encontrado);
+                const data = await getZapatillasId(id);
+                console.log('Producto cargado:', data);
+                setProducto(data);
             } catch (error) {
                 console.error('Error al cargar el producto:', error);
             } finally {
@@ -24,6 +24,19 @@ const Detalles = () => {
 
         fetchProducto();
     }, [id]);
+
+    const handleEliminar = async () => {
+        if (window.confirm("¿Estás seguro de que deseas eliminar este producto?")) {
+            try {
+                await deleteZapatilla(id);
+                console.log("Producto eliminado con éxito");
+                navigate('/');
+            } catch (error) {
+                console.error("Error al eliminar el producto:", error);
+                alert("Hubo un error al eliminar el producto.");
+            }
+        }
+    };
 
     if (loading)
         return <div className="text-center text-gray-500 mt-10">Cargando detalles...</div>;
@@ -75,6 +88,27 @@ const Detalles = () => {
                         </p>
                     </div>
                 </div>
+                <button
+                    onClick={handleEliminar}
+                    className="mt-6 bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition-colors duration-300 shadow-md hover:shadow-lg"
+                >
+                    Eliminar producto
+                </button>
+
+                <button
+                    //onClick={}
+                    className="mt-6 bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition-colors duration-300 shadow-md hover:shadow-lg"
+                >
+                    Editar producto
+                </button>
+
+                <button
+                    //onClick={}
+                    className="mt-6 bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition-colors duration-300 shadow-md hover:shadow-lg"
+                >
+                    Agregar carrito
+                </button>
+
             </div>
         </div>
     );
