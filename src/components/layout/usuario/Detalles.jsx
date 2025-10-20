@@ -88,26 +88,28 @@ const Detalles = () => {
                         </p>
                     </div>
                 </div>
-                <button
-                    onClick={handleEliminar}
-                    className="mt-6 bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition-colors duration-300 shadow-md hover:shadow-lg"
-                >
-                    Eliminar producto
-                </button>
+                <div className="mt-6 flex flex-wrap gap-4">
+                    <button
+                        onClick={handleEliminar}
+                        className="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition-colors duration-300 shadow-md hover:shadow-lg"
+                    >
+                        Eliminar producto
+                    </button>
 
-                <button
-                    //onClick={}
-                    className="mt-6 bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition-colors duration-300 shadow-md hover:shadow-lg"
-                >
-                    Editar producto
-                </button>
+                    <button
+                        onClick={() => navigate(`/zapatillas/${id}/editar`)}
+                        className="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition-colors duration-300 shadow-md hover:shadow-lg"
+                    >
+                        Editar producto
+                    </button>
 
-                <button
-                    //onClick={}
-                    className="mt-6 bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition-colors duration-300 shadow-md hover:shadow-lg"
-                >
-                    Agregar carrito
-                </button>
+                    <button
+                        // onClick={}
+                        className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300 shadow-md hover:shadow-lg"
+                    >
+                        Agregar al carrito
+                    </button>
+                </div>
 
             </div>
         </div>

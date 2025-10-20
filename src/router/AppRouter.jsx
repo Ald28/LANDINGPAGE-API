@@ -6,6 +6,7 @@ import MujerUsuario from "../components/layout/usuario/mujer";
 import NiñozUsuario from "../components/layout/usuario/Niñoz";
 import Carrito from "../components/layout/Carrito";
 import Detalles from "../components/layout/usuario/Detalles";
+import EditarZapatilla from "../pages/usuario/EditarZapatilla";
 
 const AppRouter = () => {
   return (
@@ -19,6 +20,7 @@ const AppRouter = () => {
           <Route path="/niñoz" element={<NiñozUsuario />} />
           <Route path="/carrito" element={<Carrito />} />
           <Route path="/detalle/:id" element={<Detalles />} />
+          <Route path="/zapatillas/:id/editar" element={<EditarZapatilla />} />
         </Route>
 
       </Routes>
